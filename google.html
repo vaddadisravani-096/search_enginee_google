@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Google_clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="google.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li ><a href="#">About</a></li>
+                <li class="hi"><a href="#">Store</a></li>
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+            </ul>
+            <div id="dotlg"></div>
+            <div id="plogo"></div>
+        </div>
+    </header>
+    <div class="container">
+        <div id="gl"></div>
+        <div class="search">
+            <i id="k" class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="jk" class="query">
+            <p id="mic"></p>
+            <p id="em"></p>
+        </div>
+        <div class="sbx">
+            <button class="swbt">Google Search</button>
+        </div>
+    </div>
+<footer class="footer">
+    <div class="downb">
+        <ul>
+            <li id="d1"><a href="#">Australia</a></li>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <li class="d2"><a href="#">Advertising</a></li>
+            <li class="d2"><a href="#">Business</a></li>
+            <li id><a id="kia" href="#">HowSearchWorks</a></li>
+            <li class="d2"><a href="#">Privacy</a></li>
+            <li class="d2"><a href="#">Settings</a></li>
+            <li class="d2"><a href="#">Terms</a></li>
+            </ul>
+    </div>
+<script>
+let query=document.querySelector('.query');
+let swbt=document.querySelector('.swbt');
+swbt.onclick=function(){
+    let url='https://www.google.com/search?q='+query.value;
+    window.open(url);
+}
+" ".onclick=function(){
+    let url='https://www.google.com/search?q='+query.value;
+    window.open(url,'_self');
+}
+</script>
+</footer>
+</body>
+</html>
